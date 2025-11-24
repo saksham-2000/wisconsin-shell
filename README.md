@@ -1,4 +1,4 @@
-# Wisconsin Shell (Wsh) 💻
+# Walter Shell (Wsh) 💻
 
 **Wsh** is a custom Unix-style shell written in C that implements core UNIX concepts 
 (fork-exec, pipes, path resolution)
