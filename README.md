@@ -37,17 +37,9 @@ You'll need a C compiler (like `gcc` or `clang`) and `make` installed on your sy
 
 2. **Compile the source code:**
    ```bash
-   # Clean any previous builds
-    make clean
-
-    # Build both release and debug versions
-    make
-
-    # Build just release version
-    make wsh
-
-    # Build just debug version
-    make wsh-dbg
+    make clean     # Clean any previous builds
+    make           # Build both release and debug versions
+    make wsh-dbg   # Build just debug version
    ```
 
 3. **Run the shell:**
