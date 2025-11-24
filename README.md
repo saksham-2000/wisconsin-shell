@@ -1,6 +1,6 @@
-# WisconsinShell (Wsh)
+# Wisconsin Shell (Wsh) 💻
 
-**wsh** is a custom Unix-style shell written in C that implements core UNIX concepts 
+**Wsh** is a custom Unix-style shell written in C that implements core UNIX concepts 
 (fork-exec, pipes, path resolution)
 
 ## Features
@@ -19,7 +19,7 @@ wsh supports the following core functionalities:
   - `which <command>` - Shows whether a command is a built-in, an alias, or an external executable
   - `history [n]` - Displays the command history or executes the nth command from history
 
-## Getting Started
+## Getting Started 🚀
 
 Follow these instructions to build and run wsh on your local machine.
 
@@ -37,8 +37,17 @@ You'll need a C compiler (like `gcc` or `clang`) and `make` installed on your sy
 
 2. **Compile the source code:**
    ```bash
-   make clean
-   make
+   # Clean any previous builds
+    make clean
+
+    # Build both release and debug versions
+    make
+
+    # Build just release version
+    make wsh
+
+    # Build just debug version
+    make wsh-dbg
    ```
 
 3. **Run the shell:**
@@ -66,7 +75,7 @@ Here are some examples of what you can do with wsh:
   ```bash
   wsh> ls -l | grep .c | wc -l
   wsh> path | tr 'a-z' 'A-Z'
-  wsh> echo Hello World' | rev | tr 'A-Z' 'a-z' | awk '{print $2, $1}
+  wsh> echo Hello Recruiter | rev | tr 'A-Z' 'a-z' | awk '{print $2, $1}'
   ```
 
 - **Create and use an alias:**
@@ -153,14 +162,6 @@ The shell leverages custom data structures for efficient operation:
 ```
 
 ## Development
-
-### Building from Source
-
-```bash
-make clean    # Remove previous builds
-make          # Compile the project
-make debug    # Compile with debugging symbols
-```
 
 ### Memory Leak Testing
 
