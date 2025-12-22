@@ -1,7 +1,5 @@
 # Walter Shell (Wsh) 💻
 
-*"I am the one who forks."*
-
 **Wsh** is a custom Unix-style shell written in C that implements core UNIX concepts 
 (fork-exec, pipes, path resolution)
 
